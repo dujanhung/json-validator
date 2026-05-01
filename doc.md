@@ -15,7 +15,8 @@ example:
 ```json
 {
  "a":"string",
- "b|external_file(lua)":"string"
+ "b|external_file(lua)":"string",
+ "c|@required,hex(tag,no_alpha)":"string"
 }
 ```
 
