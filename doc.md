@@ -11,7 +11,7 @@ JSON entry syntax
 ```
 
 >[!NOTE]
->`name` can't contains `|` , because it's perversed for name-flags separator.
+>`name` can't contains `|` , because it's used for separator.
 
 example:
 
