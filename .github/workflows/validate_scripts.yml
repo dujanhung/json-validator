@@ -9,10 +9,10 @@ jobs:
   steps:
    - name: checkout repo
      uses: actions/checkout@v5
-   - name: setup python
+   - name: setup py
      uses: actions/setup-python@v5
      with:
       python-version: '3.x'
-   - name: validate
+   - name: validate py
      run: |
       python -m compileall
