@@ -166,7 +166,7 @@ external_file()
 
 represents a path to external file.
 
-only available for `string`
+only available for `string` .
 
 the mandatory is used to specify file extension.
 
