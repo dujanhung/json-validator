@@ -23,6 +23,8 @@ example:
 }
 ```
 
+___
+
 <h2>
 JSON variants enum
 </h2>
@@ -72,6 +74,8 @@ ___
 ```
 
 represents a nested JSON object.
+
+___
 
 <h2>
 JSON flags enum
