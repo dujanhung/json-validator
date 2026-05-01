@@ -192,7 +192,7 @@ ___
 hex_flag()
 ```
 
-restricts `string` to be HEX code with specified HEX flags.
+restricts `string` to be a HEX code with specified HEX flags.
 
 only available for `string` .
 
