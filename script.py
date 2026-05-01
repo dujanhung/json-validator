@@ -2,8 +2,6 @@ import json
 import os
 import re
 import sys
-class ValidationError(Exception):
- pass
 class Validator:
  def __init__(self,lookup_path,data_path):
   self.lookup_path=lookup_path
