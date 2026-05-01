@@ -286,6 +286,7 @@ restricts this entry with conditions within the same object level.
 - `/` : represents mathematical divide.
 - `^` : represents mathematical exponentation.
 - `sqrt()` : represents mathematical square root.
+- `root()` : represents mathematical root with base N.
 - `sin()` : represents mathematical sine.
 - `cos()` : represents mathematical cosine.
 - `tan()` : represents mathematical tangent.
