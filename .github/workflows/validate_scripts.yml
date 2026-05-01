@@ -15,4 +15,5 @@ jobs:
       python-version: '3.x'
    - name: validate py
      run: |
+      python -h
       python --compile script.py
