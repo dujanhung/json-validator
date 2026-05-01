@@ -42,7 +42,7 @@ JSON flags enum
 
 marks this JSON entry as required.
 
->[!CAUTION]
+>[!IMPORTANT]
 >if you remove such entries, the script would reject.
 
 ___
@@ -53,7 +53,7 @@ ___
 
 marks this JSON entry as unique against similar values within the array.
 
->[!CAUTION]
+>[!IMPORTANT]
 >if you duplicate such entries, the script would reject.
 
 ___
@@ -96,3 +96,22 @@ only available for `string` .
 
 - `tag` : include tag symbol ( `#` ).
 - `no_alpha` : rejects alpha value.
+
+___
+
+```txt
+external_file()
+```
+
+represents a path to external file.
+
+only available for `string`
+
+the mandatory is used to specify file extension.
+
+- `png` : represents a PNG file.
+- `obj` : represents an OBJ file.
+- `lua` : represents a Lua file.
+
+>[!IMPORTANT]
+>the filepath should be valid. otherwise, this script would reject.
