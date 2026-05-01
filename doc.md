@@ -2,9 +2,9 @@
 JSON lookup syntax
 </h2>
 
-<codeblock lang="json">
+```json
 "name":"variant_name"
-</codeblock>
+```
 
 ```json
 "name|flag_name,...":"variant_name"
