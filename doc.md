@@ -227,6 +227,24 @@ the lookup file:
 ```json
 {
  "a|enum(a,b)":"string",
- "b|need(a.value==a.enum.slot(b))":"int"
+ "b|need(a.value==a.enum.slot(2))":"int"
+}
+```
+
+this file is valid:
+
+```json
+{
+ "a":"b",
+ "b":0
+}
+```
+
+this file is NOT valid (because it violates `need()` in the lookup file)
+
+```json
+{
+ "a":"a",
+ "b":0
 }
 ```
