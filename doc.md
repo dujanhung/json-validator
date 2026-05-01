@@ -25,7 +25,7 @@ the lookup file:
 }
 ```
 
-would validate the JSON file like this:
+would validate the JSON file likes this:
 
 ```json
 {
