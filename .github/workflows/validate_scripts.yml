@@ -15,4 +15,4 @@ jobs:
       python-version: '3.x'
    - name: validate py
      run: |
-      python --py-compile script.py
+      python --compile script.py
