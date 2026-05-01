@@ -40,7 +40,7 @@ class Validator:
   errors=[]
   if isinstance(lookup,dict):
    if not isinstance(data,dict):
-    return [f"{path}: expected object"]
+    return[f"{path}: expected object"]
    parsed_lookup={}
    for raw_key,variant in lookup.items():
     key,flags=self.parse_entry(raw_key)
@@ -55,9 +55,9 @@ class Validator:
     errors.extend(self.validate_variant(key,value,variant,flags,data,path))
   elif isinstance(lookup,list):
    if not isinstance(data,list):
-    return [f"{path}: expected array"]
+    return[f"{path}: expected array"]
    if len(lookup)==0:
-    return []
+    return[]
    schema=lookup[0]
    for index,item in enumerate(data):
     errors.extend(self.validate(schema,item,f"{path}[{index}]"))
@@ -103,7 +103,7 @@ class Validator:
   for flag in flags:
    if flag.startswith(flag_name+"("):
     content=flag[len(flag_name)+1:-1]
-    return [x.strip() for x in content.split(",")]
+    return[x.strip() for x in content.split(",")]
   return None
  def validate_flags(self,key,value,flags,obj,path):
   errors=[]
@@ -153,7 +153,7 @@ class Validator:
       if value<=0:
        errors.append(f"{path}.{key}: must satisfy x>0")
      elif option=="linear":
-      if not (0<=value<=1):
+      if not(0<=value<=1):
        errors.append(f"{path}.{key}: must satisfy 0<=x<=1")
      elif option=="unsigned":
       if value<0:
