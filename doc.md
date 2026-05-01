@@ -98,7 +98,7 @@ represents a nested JSON object.
 ___
 
 <h2>
-JSON flags enum
+JSON flags
 </h2>
 
 ```txt
