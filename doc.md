@@ -295,6 +295,8 @@ restricts this entry with conditions within the same object level.
 - `remap()` : represents mathematical remap.
 - `sign()` : represents mathematical sign.
 - `abs()` : represents mathematical absolute.
+- `PI` : represents mathematical `PI` constant.
+- `E` : represents mathematical `E` constant.
 - `..` : concatenate `string` .
 
 example:
