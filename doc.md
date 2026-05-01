@@ -115,6 +115,8 @@ ___
 
 marks this value as unique to prevent from duplicated values from different JSON objects from the same array.
 
+only available for `int` , `float` and `string` .
+
 example:
 
 the lookup file:
