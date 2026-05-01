@@ -43,7 +43,7 @@ JSON flags enum
 marks this JSON entry as required.
 
 >[!CAUTION]
->if you remove such entries, the script would throw an error.
+>if you remove such entries, the script would reject.
 
 ___
 
@@ -54,4 +54,4 @@ ___
 marks this JSON entry as unique against similar values within the array.
 
 >[!CAUTION]
->if you duplicate such entries, the script would throw an error.
+>if you duplicate such entries, the script would reject.
