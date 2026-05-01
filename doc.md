@@ -68,7 +68,7 @@ marks this value as unique against similar values from different JSON object wit
 
 example:
 
-the schema file
+the lookup file:
 
 ```json
 {
