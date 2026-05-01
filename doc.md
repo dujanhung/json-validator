@@ -3,7 +3,20 @@ JSON entry syntax
 </h2>
 
 ```json
+"name":"variant_name"
+```
+
+```json
 "name|flag_name,...":"variant_name"
+```
+
+example:
+
+```json
+{
+ "a":"string",
+ "b|external_file(lua)":"string"
+}
 ```
 
 <h2>
