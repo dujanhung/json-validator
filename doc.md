@@ -46,7 +46,7 @@ ___
 "json"
 ```
 
-represents a nested JSON.
+represents a nested JSON object.
 
 <h2>
 JSON flags enum
