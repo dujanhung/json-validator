@@ -11,6 +11,14 @@ JSON variants enum
 </h2>
 
 ```json
+"bool"
+```
+
+represents a boolean.
+
+___
+
+```json
 "int"
 ```
 
