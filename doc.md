@@ -95,5 +95,5 @@ specify HEX flags.
 only available for `string` .
 
 - `tag` : include tag symbol ( `#` ).
-- `rgb` : represents RGB color.
-- `rgba` : represents RGBA color.
+- `rgb` : represents HEX color without alpha value.
+- `rgba` : represents HEX color.
