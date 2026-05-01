@@ -1,3 +1,14 @@
-name: validate scripts
+name: validate JSON
 on:
- workflow-dispatch:
+ workflow_dispatch:
+env:
+ FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+jobs:
+ validate-json:
+  runs-on: ubuntu-latest
+  steps:
+   - name: get checkout
+     uses: actions/checkout@v5
+   - name: validate
+     run: |
+      python py-parse *.py
