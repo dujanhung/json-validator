@@ -1,0 +1,3 @@
+name: validate scripts
+on:
+ workflow-dispatch:
