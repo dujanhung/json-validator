@@ -12,6 +12,8 @@ ___
 
 defines a field with a specific type.
 
+___
+
 ## syntax with flags
 
 ```json
@@ -22,6 +24,8 @@ defines a field with one or more validation flags.
 
 > [!NOTE]
 > `name` must **not** contain `|`, because it is used as the separator for flags.
+
+___
 
 ## example
 
