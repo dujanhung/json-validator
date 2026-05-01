@@ -64,5 +64,18 @@ array_flag()
 
 specify array flags.
 
-- <code>allow_multiple</code> : allows the array to have multiple elements.
+- `allow_multiple` : allows the array to have multiple elements.
 - *omitted flag* : restricts the array to follow as is.
+
+___
+
+```txt
+range_flag()
+```
+
+specific range flags.
+
+only available for `float` and `int` .
+
+- `exp` : represents exponental `float` .
+- `linear` : represents linear `float` or binary `int` .
