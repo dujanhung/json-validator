@@ -95,7 +95,7 @@ this file is valid:
 }
 ```
 
-this file isn't valid:
+this file is NOT valid:
 
 ```json
 {
