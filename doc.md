@@ -15,11 +15,23 @@ JSON lookup syntax
 
 example:
 
+the lookup file:
+
 ```json
 {
  "a":"string",
  "b|external_file(lua)":"string",
  "c|@required,hex(tag,no_alpha)":"string"
+}
+```
+
+would validate the JSON file like this:
+
+```json
+{
+ "a":"aaa",
+ "b":"path/to/file.lua",
+ "c":"#0000ff"
 }
 ```
 
