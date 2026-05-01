@@ -280,6 +280,19 @@ restricts this entry with conditions within the same object level.
 - `or` : represents "OR" logic.
 - `xor` : represents "exclusive OR" logic.
 - `!` : represents "NOT" logic.
+- `+` : represents mathematical plus.
+- `-` : represents mathematical minus.
+- `*` : represents mathematical multiply.
+- `/` : represents mathematical divide.
+- `^` : represents mathematical exponentation.
+- `sqrt()` : represents mathematical square root.
+- `sin()` : represents mathematical sine.
+- `cos()` : represents mathematical cosine.
+- `tan()` : represents mathematical tangent.
+- `sinh()` : represents mathematical hyper sine.
+- `cosh()` : represents mathematical hyper cosine.
+- `tanh()` : represents mathematical hyper tangent.
+- `remap()` : represents mathematical remap.
 - `..` : concatenate `string` .
 
 example:
