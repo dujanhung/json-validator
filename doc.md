@@ -136,7 +136,7 @@ restricts this entry with required conditions within the same object level.
 
 - `entry.key` : represents entry key.
 - `entry.value` : represents entry value.
-- `entry.enum.slot()` : represents entry enum slot. begins with `1` .
+- `entry.enum.slot()` : represents entry enum slot in `enum()` . begins with `1` .
 - `==` : equal.
 - `>=` : more than or equal.
 - `<=` : less than or equal.
