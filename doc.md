@@ -201,6 +201,10 @@ only available for `string` .
 
 >[!NOTE]
 >HEX codes should be lowercase.
+>
+>example:
+>
+>`#abcdef`
 
 ___
 
