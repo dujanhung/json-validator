@@ -90,7 +90,7 @@ this file is valid:
   },
   {
    "b":"id2"
-  },
+  }
  ]
 }
 ```
@@ -105,7 +105,7 @@ this file is NOT valid:
   },
   {
    "b":"id1"
-  },
+  }
  ]
 }
 ```
