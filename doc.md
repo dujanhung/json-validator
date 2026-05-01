@@ -275,33 +275,6 @@ restricts this entry with conditions within the same object level.
 - `>=` : more than or equal.
 - `<=` : less than or equal.
 - `!=` : not equal.
-- `(` `)` : brackets for priority.
-- `and` : represents "AND" logic.
-- `or` : represents "OR" logic.
-- `xor` : represents "exclusive OR" logic.
-- `!` : represents "NOT" logic.
-- `+` : represents mathematical plus.
-- `-` : represents mathematical minus.
-- `*` : represents mathematical multiply.
-- `/` : represents mathematical divide.
-- `^` : represents mathematical exponentation.
-- `sqrt()` : represents mathematical square root.
-- `root()` : represents mathematical root with base N.
-- `sin()` : represents mathematical sine.
-- `cos()` : represents mathematical cosine.
-- `tan()` : represents mathematical tangent.
-- `sinh()` : represents mathematical hyper sine.
-- `cosh()` : represents mathematical hyper cosine.
-- `tanh()` : represents mathematical hyper tangent.
-- `log()` : represents mathematical logarithm with base 10.
-- `logn()` : represents mathematical logarithm with base N.
-- `ln()` : represents mathematical logarithm with base `E` .
-- `remap()` : represents mathematical remap.
-- `sign()` : represents mathematical sign.
-- `abs()` : represents mathematical absolute.
-- `PI` : represents mathematical `PI` constant.
-- `E` : represents mathematical `E` constant.
-- `..` : concatenate `string` .
 
 example:
 
