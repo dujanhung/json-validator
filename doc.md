@@ -40,10 +40,7 @@ JSON flags enum
 @required
 ```
 
-marks this JSON entry as required.
-
->[!IMPORTANT]
->if you remove such entries, the script would reject.
+marks this entry as required.
 
 ___
 
@@ -51,10 +48,7 @@ ___
 @unique
 ```
 
-marks this JSON entry as unique against similar values within the array.
-
->[!IMPORTANT]
->if you duplicate such entries, the script would reject.
+marks this value as unique against similar values within the array.
 
 ___
 
@@ -112,9 +106,6 @@ the mandatory is used to specify file extension.
 - `png` : represents a PNG file.
 - `obj` : represents an OBJ file.
 - `lua` : represents a Lua file.
-
->[!IMPORTANT]
->the filepath should be valid. otherwise, this script would reject.
 
 ___
 
