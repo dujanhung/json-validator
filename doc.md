@@ -219,3 +219,14 @@ restricts this entry with required conditions within the same object level.
 - `<=` : less than or equal.
 - `!=` : not equal.
 - `..` : concatenate `string` .
+
+example:
+
+the lookup file:
+
+```json
+{
+ "a|enum(a,b)":"string",
+ "b|need(a.value==a.enum.slot(b))":"int"
+}
+```
