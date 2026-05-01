@@ -239,6 +239,7 @@ restricts this entry with conditions within the same object level.
 - `>=` : more than or equal.
 - `<=` : less than or equal.
 - `!=` : not equal.
+- `..` : concatenate `string` .
 
 example:
 
