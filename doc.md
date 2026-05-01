@@ -122,7 +122,7 @@ ___
 need()
 ```
 
-restricts this entry with required conditions.
+restricts this entry with required conditions within the same object level.
 
 - `entry.key` : represents entry key.
 - `entry.value` : represents entry value.
