@@ -78,4 +78,6 @@ specific range flags.
 only available for `float` and `int` .
 
 - `exp` : represents exponental `float` .
-- `linear` : represents linear `float` or binary `int` .
+- `linear` : represents linear `float` .
+- `unsigned` : represents unsigned `int` or `float` .
+- `binary` : represents binary `int` .
