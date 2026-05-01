@@ -51,7 +51,7 @@ ___
 @unique
 ```
 
-marks this JSON entry as unique against similar values.
+marks this JSON entry as unique against similar values within the array.
 
 >[!CAUTION]
 >if you duplicate such entries, the script would throw an error.
