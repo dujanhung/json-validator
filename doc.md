@@ -184,12 +184,15 @@ ___
 hex_flag()
 ```
 
-restricts `string` to be HEX color with specified HEX flags.
+restricts `string` to be HEX code with specified HEX flags.
 
 only available for `string` .
 
 - `tag` : include tag symbol ( `#` ).
 - `no_alpha` : rejects alpha value.
+
+>[!NOTE]
+>HEX codes should be lowercase.
 
 ___
 
