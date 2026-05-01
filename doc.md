@@ -7,6 +7,10 @@ JSON object syntax
 ```
 
 <h2>
+JSON variants enum
+</h2>
+
+<h2>
 JSON flags enum
 </h2>
 
