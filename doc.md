@@ -185,7 +185,7 @@ ___
 external_file()
 ```
 
-restricts `string` to be a path to external file.
+restricts `string` to be a path to external file that relative to the being-validated JSON file.
 
 only available for `string` .
 
