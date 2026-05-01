@@ -64,6 +64,8 @@ array_flag()
 
 specify array flags.
 
+only available for `array` .
+
 - `allow_multiple` : allows the array to have multiple elements.
 - `strict` : restricts the array to follow as is.
 
