@@ -10,6 +10,9 @@ JSON entry syntax
 "name|flag_name,...":"variant_name"
 ```
 
+>[!NOTE]
+>`name` can't contains `|` , because it's perversed for flags separator.
+
 example:
 
 ```json
