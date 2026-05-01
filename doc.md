@@ -115,3 +115,20 @@ the mandatory is used to specify file extension.
 
 >[!IMPORTANT]
 >the filepath should be valid. otherwise, this script would reject.
+
+___
+
+```txt
+need()
+```
+
+restricts this entry with required conditions.
+
+- `entry.key` : represents entry key.
+- `entry.value` : represents entry value.
+- `entry.enum.slot()` : represents entry enum slot.
+- `==` : equal.
+- `>=` : more than or equal.
+- `<=` : less than or equal.
+- `!=` : not equal.
+- `..` : concatenate `string` .
