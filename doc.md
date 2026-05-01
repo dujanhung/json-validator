@@ -95,7 +95,7 @@ this file is valid:
 }
 ```
 
-this file is NOT valid (because it violates `@unique` ) :
+this file is NOT valid (because it violates `@unique` in the lookup file) :
 
 ```json
 {
