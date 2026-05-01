@@ -1,6 +1,10 @@
 <h2>
-JSON key syntax
+JSON object syntax
 </h2>
+
+```json
+"name|flag,...":"variant_name"
+```
 
 <h2>
 JSON key flags enum
