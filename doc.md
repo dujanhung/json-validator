@@ -32,6 +32,14 @@ ___
 
 represents a string value.
 
+___
+
+```json
+"array"
+```
+
+represents an array value.
+
 <h2>
 JSON flags enum
 </h2>
