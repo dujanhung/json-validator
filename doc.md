@@ -1,5 +1,5 @@
 <h2>
-JSON entry syntax
+JSON lookup syntax
 </h2>
 
 ```json
