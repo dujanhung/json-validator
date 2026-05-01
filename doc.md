@@ -95,5 +95,4 @@ specify HEX flags.
 only available for `string` .
 
 - `tag` : include tag symbol ( `#` ).
-- `rgb` : represents HEX color without alpha value.
-- `rgba` : represents HEX color.
+- `no_alpha` : rejects alpha value.
