@@ -2,9 +2,9 @@
 JSON entry syntax
 </h2>
 
-```json
+\`\`\`json
 "name|flag_name,...":"variant_name"
-```
+\`\`\`
 
 <h2>
 JSON variants enum
