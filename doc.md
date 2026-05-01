@@ -74,7 +74,7 @@ the lookup file:
 {
  "a|array_flag(allow_multiple)":[
   {
-   "a|@unique":"string"
+   "a|@unique":"int"
   }
  ]
 }
@@ -86,10 +86,10 @@ this file is valid:
 {
  "a":[
   {
-   "a":"id1"
+   "a":1
   },
   {
-   "a":"id2"
+   "a":2
   }
  ]
 }
@@ -101,10 +101,10 @@ this file is NOT valid (because it violates `@unique` in the lookup file) :
 {
  "a":[
   {
-   "a":"id1"
+   "a":1
   },
   {
-   "a":"id1"
+   "a":1
   }
  ]
 }
