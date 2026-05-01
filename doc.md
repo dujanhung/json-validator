@@ -177,6 +177,32 @@ restricts the value with specified enum.
 
 only available for `string` .
 
+example:
+
+the lookup file:
+
+```json
+{
+ "a|enum(a,b)":"string"
+}
+```
+
+this file is valid:
+
+```json
+{
+ "a":"a"
+}
+```
+
+this file is NOT valid (because the value don't exists in `enum()` in the lookup file):
+
+```json
+{
+ "a":"z"
+}
+```
+
 ___
 
 ```txt
