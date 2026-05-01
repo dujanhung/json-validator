@@ -119,6 +119,16 @@ the mandatory is used to specify file extension.
 ___
 
 ```txt
+enum(element1,...)
+```
+
+restricts this entry with specified enum.
+
+only available for `string` .
+
+___
+
+```txt
 need()
 ```
 
@@ -126,7 +136,7 @@ restricts this entry with required conditions within the same object level.
 
 - `entry.key` : represents entry key.
 - `entry.value` : represents entry value.
-- `entry.enum.slot()` : represents entry enum slot.
+- `entry.enum.slot()` : represents entry enum slot. begins with `1` .
 - `==` : equal.
 - `>=` : more than or equal.
 - `<=` : less than or equal.
