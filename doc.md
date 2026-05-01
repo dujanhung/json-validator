@@ -40,10 +40,10 @@ JSON flags enum
 @required
 ```
 
-marks this JSON key as required.
+marks this JSON entry as required.
 
 >[!CAUTION]
->if you remove such entries in the being-validated JSON file, the script would throw an error.
+>if you remove such entries, the script would throw an error.
 
 ___
 
@@ -51,4 +51,7 @@ ___
 @unique
 ```
 
-marks this JSON key as unique (eg. no duplicated keys within the same object level)
+marks this JSON entry as unique against similar keys within the entire JSON file.
+
+>[!CAUTION]
+>if you duplicate such entries, the script would throw an error.
