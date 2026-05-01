@@ -2,6 +2,8 @@
 
 a lookup schema defines the expected structure and validation rules for a JSON file.
 
+___
+
 ## basic syntax
 
 ```json
