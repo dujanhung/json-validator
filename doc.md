@@ -64,7 +64,51 @@ ___
 @unique
 ```
 
-marks this value as unique against similar values within the array.
+marks this value as unique against similar values from different JSON object within the array.
+
+example:
+
+the schema file
+
+```json
+{
+ "a|array_flag(allow_multiple)":[
+  {
+   "b|@unique":"string"
+  }
+ ]
+}
+```
+
+this file is valid:
+
+```json
+{
+ "a":[
+  {
+   "b":"id1"
+  },
+  {
+   "b":"id2"
+  },
+ ]
+}
+```
+
+this file isn't valid:
+
+```json
+{
+ "a":[
+  {
+   "b":"id1"
+  },
+  {
+   "b":"id1"
+  },
+ ]
+}
+```
 
 ___
 
