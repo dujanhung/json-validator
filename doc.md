@@ -254,7 +254,7 @@ the lookup file:
 
 ```json
 {
- "a|enum(a,b)":"string",
+ "a|enum(aa,bb)":"string",
  "b|need(a.value==a.enum.slot(2))":"int"
 }
 ```
@@ -263,7 +263,7 @@ this file is valid:
 
 ```json
 {
- "a":"b",
+ "a":"bb",
  "b":0
 }
 ```
@@ -272,7 +272,7 @@ this file is NOT valid (because it violates `need()` in the lookup file):
 
 ```json
 {
- "a":"a",
+ "a":"aa",
  "b":0
 }
 ```
