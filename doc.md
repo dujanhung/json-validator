@@ -165,7 +165,7 @@ ___
 hex_flag()
 ```
 
-represents a HEX color with specified HEX flags.
+restricts `string` to be HEX color with specified HEX flags.
 
 only available for `string` .
 
@@ -178,7 +178,7 @@ ___
 external_file()
 ```
 
-represents a path to external file.
+restricts `string` to be a path to external file.
 
 only available for `string` .
 
