@@ -55,3 +55,14 @@ marks this JSON entry as unique against similar values within the array.
 
 >[!CAUTION]
 >if you duplicate such entries, the script would reject.
+
+___
+
+```txt
+array_flag()
+```
+
+specify array flags.
+
+- <code>allow_multiple</code> : allows the array to have multiple elements.
+- *omit* : restricts the array to follow as is.
