@@ -57,6 +57,7 @@ minimal valid JSON:
 }
 ```
 
+___
 ---
 
 # JSON variant types
@@ -161,6 +162,7 @@ example:
 }
 ```
 
+___
 ---
 
 # JSON flags
