@@ -42,6 +42,9 @@ JSON flags enum
 
 marks this JSON key as required.
 
+>[!CAUTION]
+>if you remove such entries in the being-validated JSON file, the script would throw an error.
+
 ___
 
 ```txt
