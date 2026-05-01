@@ -7,7 +7,7 @@ JSON object syntax
 ```
 
 <h2>
-JSON key flags enum
+JSON flags enum
 </h2>
 
 ```txt
