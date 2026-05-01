@@ -11,7 +11,7 @@ JSON entry syntax
 ```
 
 >[!NOTE]
->`name` can't contains `|` , because it's used for separator.
+>`name` shouldn't contains `|` , because it may breaks the script.
 
 example:
 
