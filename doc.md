@@ -138,7 +138,9 @@ ___
 array_flag()
 ```
 
-specify array flags.
+restricts the array.
+
+the mandatory is used to specify array flags.
 
 only available for `array` .
 
@@ -151,7 +153,7 @@ ___
 range_flag()
 ```
 
-specify range flags.
+restricts `float` and `int` to be within specified range flags.
 
 only available for `float` and `int` .
 
