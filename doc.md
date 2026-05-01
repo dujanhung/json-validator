@@ -77,7 +77,7 @@ specify array flags.
 only available for `array` .
 
 - `allow_multiple` : allows the array to have multiple elements.
-- `strict` : restricts the array to follow as is. if the value is `[]` , blocks all elements. if the value is `"array"` , do nothing.
+- `strict` : restricts the array to follow as is. if the value is `[]` , blocks all elements. if the value is `"array"` , accepts all elements.
 
 ___
 
