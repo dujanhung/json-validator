@@ -101,7 +101,7 @@ the lookup file:
 
 ```json
 {
- "a|array_flag(allow_multiple)":[
+ "aa|array_flag(allow_multiple)":[
   {
    "a|@unique":"int"
   }
@@ -113,7 +113,7 @@ this file is valid:
 
 ```json
 {
- "a":[
+ "aa":[
   {
    "a":1
   },
@@ -128,7 +128,7 @@ this file is NOT valid (because it violates `@unique` in the lookup file) :
 
 ```json
 {
- "a":[
+ "aa":[
   {
    "a":1
   },
@@ -211,7 +211,7 @@ the lookup file:
 
 ```json
 {
- "a|enum(a,b)":"string"
+ "a|enum(aa,bb)":"string"
 }
 ```
 
@@ -219,7 +219,7 @@ this file is valid:
 
 ```json
 {
- "a":"b"
+ "a":"bb"
 }
 ```
 
@@ -227,7 +227,7 @@ this file is NOT valid (because the value don't exists in `enum()` in the lookup
 
 ```json
 {
- "a":"z"
+ "a":"zz"
 }
 ```
 
