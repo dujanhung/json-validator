@@ -1,4 +1,4 @@
-name: validate JSON
+name: validate scripts
 on:
  workflow_dispatch:
 env:
