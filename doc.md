@@ -24,6 +24,14 @@ ___
 
 represents a floating-point value.
 
+___
+
+```json
+"string"
+```
+
+represents a string value.
+
 <h2>
 JSON flags enum
 </h2>
