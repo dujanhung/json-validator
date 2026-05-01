@@ -1,5 +1,5 @@
 <h2>
-key flags enum
+JSON key flags enum
 </h2>
 
 ```txt
