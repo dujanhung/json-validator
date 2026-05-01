@@ -64,7 +64,7 @@ ___
 @unique
 ```
 
-marks this value as unique against similar values from different JSON object within the array.
+marks this value as unique against similar values from different JSON objects within the array.
 
 example:
 
