@@ -119,7 +119,7 @@ the mandatory is used to specify file extension.
 ___
 
 ```txt
-enum(element1,...)
+enum()
 ```
 
 restricts this entry with specified enum.
