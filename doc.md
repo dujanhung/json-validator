@@ -35,7 +35,7 @@ would validate the JSON file likes this:
 }
 ```
 
-or, the smallest one is:
+or, the minimal one is:
 
 ```json
 {
