@@ -293,6 +293,8 @@ restricts this entry with conditions within the same object level.
 - `cosh()` : represents mathematical hyper cosine.
 - `tanh()` : represents mathematical hyper tangent.
 - `remap()` : represents mathematical remap.
+- `sign()` : represents mathematical sign.
+- `abs()` : represents mathematical absolute.
 - `..` : concatenate `string` .
 
 example:
