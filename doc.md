@@ -1,31 +1,39 @@
-<h2>
-JSON lookup syntax
-</h2>
+# JSON lookup syntax
+
+a lookup schema defines the expected structure and validation rules for a JSON file.
+
+## basic syntax
 
 ```json
 "name":"variant_name"
 ```
 
+defines a field with a specific type.
+
+## syntax with flags
+
 ```json
 "name|flag_name,...":"variant_name"
 ```
 
->[!NOTE]
->`name` shouldn't contains `|` , because it may breaks the script.
+defines a field with one or more validation flags.
 
-example:
+> [!NOTE]
+> `name` must **not** contain `|`, because it is used as the separator for flags.
 
-the lookup file:
+## example
+
+lookup schema:
 
 ```json
 {
  "a":"string",
  "b|external_file(lua)":"string",
- "c|@required,hex(tag,no_alpha)":"string"
+ "c|@required,hex_flag(tag,no_alpha)":"string"
 }
 ```
 
-would validate the JSON file likes this:
+valid JSON:
 
 ```json
 {
@@ -35,7 +43,7 @@ would validate the JSON file likes this:
 }
 ```
 
-or, the minimal one is:
+minimal valid JSON:
 
 ```json
 {
@@ -43,52 +51,93 @@ or, the minimal one is:
 }
 ```
 
-___
-___
+---
 
-<h2>
-JSON variants enum
-</h2>
+# JSON variant types
+
+these are the available built-in value types.
+
+## <code>bool</code>
 
 ```json
 "bool"
 ```
 
-represents a boolean type.
+represents a boolean value.
 
-___
+example:
+
+```json
+true
+```
+
+---
+
+## <code>int</code>
 
 ```json
 "int"
 ```
 
-represents an integer type.
+represents an integer value.
 
-___
+example:
+
+```json
+123
+```
+
+---
+
+## <code>float</code>
 
 ```json
 "float"
 ```
 
-represents a floating-point type.
+represents a floating-point value.
 
-___
+example:
+
+```json
+3.14
+```
+
+---
+
+## <code>string</code>
 
 ```json
 "string"
 ```
 
-represents a sequence of unicode characters.
+represents a unicode string.
 
-___
+example:
+
+```json
+"hello"
+```
+
+---
+
+## <code>array</code>
 
 ```json
 "array"
 ```
 
-represents an array type.
+represents an array.
 
-___
+example:
+
+```json
+[1,2,3]
+```
+
+---
+
+## <code>json</code>
 
 ```json
 "json"
@@ -96,32 +145,59 @@ ___
 
 represents a nested JSON object.
 
-___
-___
+example:
 
-<h2>
-JSON flags
-</h2>
+```json
+{
+ "nested":true
+}
+```
+
+---
+
+# JSON flags
+
+flags add validation rules to a field.
+
+---
+
+## <code>@required</code>
 
 ```txt
 @required
 ```
 
-marks this entry as required.
+marks the field as required.
 
-___
+example:
+
+```json
+{
+ "name|@required":"string"
+}
+```
+
+the `name` field must exist.
+
+---
+
+## <code>@unique</code>
 
 ```txt
 @unique
 ```
 
-marks this value as unique to prevent from duplicated values from different JSON objects from the same array.
+ensures values are unique across objects in the same array.
 
-only available for `int` , `float` and `string` .
+available for:
 
-example:
+- `int`
+- `float`
+- `string`
 
-the lookup file:
+### example
+
+lookup schema:
 
 ```json
 {
@@ -133,7 +209,7 @@ the lookup file:
 }
 ```
 
-this file is valid:
+valid JSON:
 
 ```json
 {
@@ -148,7 +224,7 @@ this file is valid:
 }
 ```
 
-this file is NOT valid (because it violates `@unique` in the lookup file) :
+invalid JSON:
 
 ```json
 {
@@ -163,82 +239,138 @@ this file is NOT valid (because it violates `@unique` in the lookup file) :
 }
 ```
 
-___
+reason: duplicate value violates `@unique`.
+
+---
+
+## <code>array_flag()</code>
 
 ```txt
-array_flag()
+array_flag(...)
 ```
 
-restricts the array with specified array flags.
+applies restrictions to arrays.
 
-only available for `array` .
+available for:
 
-- `allow_multiple` : allows the array to have multiple elements.
-- `strict` : restricts the array to follow as is. if the value is `[]` , blocks all elements. if the value is `"array"` , accepts all elements.
+- `array`
 
-___
+### options
+
+- `allow_multiple` → allows multiple elements
+- `strict` → enforces the exact schema structure
+
+behavior of `strict`:
+
+- `[]` → rejects all elements
+- `"array"` → accepts any element
+
+---
+
+## <code>range_flag()</code>
 
 ```txt
-range_flag()
+range_flag(...)
 ```
 
-restricts `float` and `int` to be within specified range flags.
+applies numeric constraints.
 
-only available for `float` and `int` .
+available for:
 
-- `exp` : represents exponental `float` .
-- `linear` : represents linear `float` .
-- `unsigned` : represents unsigned `int` or `float` .
+- `int`
+- `float`
 
-___
+### options
+
+- `exp` → exponential float
+- `linear` → linear float
+- `unsigned` → unsigned integer or float
+
+---
+
+## <code>hex_flag()</code>
 
 ```txt
-hex_flag()
+hex_flag(...)
 ```
 
-restricts `string` to be a HEX code with specified HEX flags.
+restricts a string to a hex color code.
 
-only available for `string` .
+available for:
 
-- `tag` : include tag symbol ( `#` ).
-- `no_alpha` : rejects alpha value.
+- `string`
 
->[!NOTE]
->HEX codes should be lowercase.
->
->example:
->
->`#abcdef`
+### options
 
-___
+- `tag` → requires `#` prefix
+- `no_alpha` → disallows alpha channel
 
-```txt
-external_file()
-```
-
-restricts `string` to be a path to external file that relative to the being-validated JSON file.
-
-only available for `string` .
-
-the mandatory is used to specify file extension.
-
-- `png` : represents a PNG file.
-- `obj` : represents an OBJ file.
-- `lua` : represents a Lua file.
-
-___
-
-```txt
-enum()
-```
-
-restricts the value with specified enum.
-
-only available for `int` , `float` and `string` .
+> [!NOTE]
+> hex values must be lowercase.
 
 example:
 
-the lookup file:
+```json
+"#abcdef"
+```
+
+---
+
+## <code>external_file()</code>
+
+```txt
+external_file(extension)
+```
+
+restricts a string to a relative file path.
+
+available for:
+
+- `string`
+
+the parameter specifies the required file extension.
+
+supported extensions:
+
+- `png`
+- `obj`
+- `lua`
+
+### example
+
+```json
+{
+ "script|external_file(lua)":"string"
+}
+```
+
+valid:
+
+```json
+{
+ "script":"scripts/test.lua"
+}
+```
+
+---
+
+## <code>enum()</code>
+
+```txt
+enum(...)
+```
+
+restricts a value to a predefined list.
+
+available for:
+
+- `int`
+- `float`
+- `string`
+
+### example
+
+lookup schema:
 
 ```json
 {
@@ -246,7 +378,7 @@ the lookup file:
 }
 ```
 
-this file is valid:
+valid JSON:
 
 ```json
 {
@@ -254,7 +386,7 @@ this file is valid:
 }
 ```
 
-this file is NOT valid (because the value don't exists in `enum()` in the lookup file):
+invalid JSON:
 
 ```json
 {
@@ -262,25 +394,34 @@ this file is NOT valid (because the value don't exists in `enum()` in the lookup
 }
 ```
 
-___
+reason: value is not listed in `enum()`.
+
+---
+
+## <code>need()</code>
 
 ```txt
-need()
+need(condition)
 ```
 
-restricts this entry with conditions within the same object level.
+adds conditional validation based on other fields in the same object.
 
-- `entry.key` : represents entry key.
-- `entry.value` : represents entry value.
-- `entry.enum.slot()` : represents entry enum slot in `enum()` . begins with `1` .
-- `==` : equal.
-- `>=` : more than or equal.
-- `<=` : less than or equal.
-- `!=` : not equal.
+### supported expressions
 
-example:
+- `entry.key` → field name
+- `entry.value` → field value
+- `entry.enum.slot(n)` → enum position (starts at `1`)
 
-the lookup file:
+### supported operators
+
+- `==` → equal
+- `!=` → not equal
+- `>=` → greater than or equal
+- `<=` → less than or equal
+
+### example
+
+lookup schema:
 
 ```json
 {
@@ -289,7 +430,7 @@ the lookup file:
 }
 ```
 
-this file is valid:
+valid JSON:
 
 ```json
 {
@@ -298,7 +439,7 @@ this file is valid:
 }
 ```
 
-this file is NOT valid (because it violates `need()` in the lookup file):
+invalid JSON:
 
 ```json
 {
@@ -306,3 +447,5 @@ this file is NOT valid (because it violates `need()` in the lookup file):
  "b":0
 }
 ```
+
+reason: `b` is only allowed when `a` matches enum slot `2`.
