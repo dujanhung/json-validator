@@ -3,3 +3,11 @@
 ```
 
 marks this JSON key as required.
+
+___
+
+```txt
+@unique
+```
+
+marks this JSON key as unique (eg. no duplicated keys within the same object level)
