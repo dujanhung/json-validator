@@ -95,7 +95,5 @@ specify HEX flags.
 only available for `string` .
 
 - `tag` : include tag symbol ( `#` ).
-- `linear_rgb` : represents linear RGB.
-- `absolute_rgb` : represents absolute RGB with maximum value is 255.
-- `linear_rgba` : represents linear RGBA.
-- `absolute_rgba` : represents absolute RGBA with maximum value is 255.
+- `rgb` : represents RGB.
+- `rgba` : represents RGBA.
