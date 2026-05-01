@@ -35,6 +35,14 @@ would validate the JSON file likes this:
 }
 ```
 
+or, the minimal one is:
+
+```json
+{
+ "c":"#abcdef"
+}
+```
+
 ___
 
 <h2>
