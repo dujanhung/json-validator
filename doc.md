@@ -239,7 +239,7 @@ this file is valid:
 }
 ```
 
-this file is NOT valid (because it violates `need()` in the lookup file)
+this file is NOT valid (because it violates `need()` in the lookup file):
 
 ```json
 {
