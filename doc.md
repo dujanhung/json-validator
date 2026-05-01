@@ -165,7 +165,9 @@ ___
 hex_flag()
 ```
 
-specify HEX flags.
+represents a HEX color.
+
+the mandatory is used to specify HEX flags.
 
 only available for `string` .
 
