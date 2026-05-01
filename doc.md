@@ -14,7 +14,7 @@ JSON variants enum
 "int"
 ```
 
-represents an integer value.
+represents an integer.
 
 ___
 
@@ -22,7 +22,7 @@ ___
 "float"
 ```
 
-represents a floating-point value.
+represents a floating-point.
 
 ___
 
@@ -30,7 +30,7 @@ ___
 "string"
 ```
 
-represents a string value.
+represents a sequence of unicode characters.
 
 ___
 
@@ -38,7 +38,7 @@ ___
 "array"
 ```
 
-represents an array value.
+represents an array.
 
 ___
 
@@ -46,7 +46,7 @@ ___
 "json"
 ```
 
-represents a JSON value.
+represents a nested JSON.
 
 <h2>
 JSON flags enum
