@@ -246,6 +246,11 @@ restricts this entry with conditions within the same object level.
 - `>=` : more than or equal.
 - `<=` : less than or equal.
 - `!=` : not equal.
+- `(` `)` : brackets for priority.
+- `and` : represents "AND" logic.
+- `or` : represents "OR" logic.
+- `xor` : represents "exclusive OR" logic.
+- `!` : represents "NOT" logic.
 - `..` : concatenate `string` .
 
 example:
