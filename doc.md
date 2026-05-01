@@ -53,7 +53,7 @@ JSON variants enum
 "bool"
 ```
 
-represents a boolean.
+represents a boolean type.
 
 ___
 
@@ -61,7 +61,7 @@ ___
 "int"
 ```
 
-represents an integer.
+represents an integer type.
 
 ___
 
@@ -69,7 +69,7 @@ ___
 "float"
 ```
 
-represents a floating-point.
+represents a floating-point type.
 
 ___
 
@@ -85,7 +85,7 @@ ___
 "array"
 ```
 
-represents an array.
+represents an array type.
 
 ___
 
