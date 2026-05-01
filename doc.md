@@ -138,9 +138,7 @@ ___
 array_flag()
 ```
 
-restricts the array.
-
-the mandatory is used to specify array flags.
+restricts the array with specified array flags.
 
 only available for `array` .
 
@@ -167,9 +165,7 @@ ___
 hex_flag()
 ```
 
-represents a HEX color.
-
-the mandatory is used to specify HEX flags.
+represents a HEX color with specified HEX flags.
 
 only available for `string` .
 
