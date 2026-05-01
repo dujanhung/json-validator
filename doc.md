@@ -10,6 +10,20 @@ JSON object syntax
 JSON variants enum
 </h2>
 
+```json
+"int"
+```
+
+represents an integer value.
+
+___
+
+```json
+"float"
+```
+
+represents a floating-point value.
+
 <h2>
 JSON flags enum
 </h2>
