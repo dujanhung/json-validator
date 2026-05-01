@@ -31,7 +31,7 @@ would validate the JSON file likes this:
 {
  "a":"aaa",
  "b":"path/to/file.lua",
- "c":"#0000ff"
+ "c":"#abcdef"
 }
 ```
 
