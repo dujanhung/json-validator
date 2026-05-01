@@ -2,6 +2,8 @@ import json
 import os
 import re
 import sys
+CHAR_FLAG_SEP="|"
+CHAR_FLAG_DELIM=","
 class Validator:
  def __init__(self,lookup_path,data_path):
   self.lookup_path=lookup_path
@@ -11,9 +13,9 @@ class Validator:
   with open(path,"r",encoding="utf-8") as f:
    return json.load(f)
  def parse_entry(self,key):
-  if "|" not in key:
+  if CHAR_FLAG_SEP not in key:
    return key,[]
-  parts=key.split("|",1)
+  parts=key.split(CHAR_FLAG_SEP,1)
   name=parts[0]
   flags=self.parse_flags(parts[1])
   return name,flags
@@ -22,7 +24,7 @@ class Validator:
   current=""
   depth=0
   for char in raw:
-   if char=="," and depth==0:
+   if char==CHAR_FLAG_DELIM and depth==0:
     flags.append(current.strip())
     current=""
     continue
@@ -101,7 +103,7 @@ class Validator:
   for flag in flags:
    if flag.startswith(flag_name+"("):
     content=flag[len(flag_name)+1:-1]
-    return[x.strip() for x in content.split(",")]
+    return[x.strip() for x in content.split(CHAR_FLAG_DELIM)]
   return None
  def validate_flags(self,key,value,flags,obj,path):
   errors=[]
@@ -116,11 +118,11 @@ class Validator:
     else:
      self.unique_tracker[key].add(value)
    elif flag.startswith("enum("):
-    enums=[x.strip() for x in flag[5:-1].split(",")]
+    enums=[x.strip() for x in flag[5:-1].split(CHAR_FLAG_DELIM)]
     if str(value) not in enums:
      errors.append(f"{path}.{key}: value not in enum")
    elif flag.startswith("hex_flag("):
-    options=[x.strip() for x in flag[9:-1].split(",")]
+    options=[x.strip() for x in flag[9:-1].split(CHAR_FLAG_DELIM)]
     pattern=r"^[0-9a-f]{6}$"
     if "tag" in options:
      pattern=r"^#[0-9a-f]{6}$"
@@ -142,7 +144,7 @@ class Validator:
     if not os.path.isfile(full_path):
      errors.append(f"{path}.{key}: file does not exist")
    elif flag.startswith("range_flag("):
-    options=[x.strip() for x in flag[11:-1].split(",")]
+    options=[x.strip() for x in flag[11:-1].split(CHAR_FLAG_DELIM)]
     if not isinstance(value,(int,float)) or isinstance(value,bool):
      errors.append(f"{path}.{key}: range_flag() requires numeric value")
      continue
