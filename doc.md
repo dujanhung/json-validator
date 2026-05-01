@@ -292,7 +292,7 @@ restricts this entry with conditions within the same object level.
 - `sinh()` : represents mathematical hyper sine.
 - `cosh()` : represents mathematical hyper cosine.
 - `tanh()` : represents mathematical hyper tangent.
-- `log()` : represents mathematical logarithm.
+- `log()` : represents mathematical logarithm with base 10.
 - `logn()` : represents mathematical logarithm with base N.
 - `ln()` : represents mathematical logarithm with base `E` .
 - `remap()` : represents mathematical remap.
