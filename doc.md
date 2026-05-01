@@ -57,6 +57,8 @@ minimal valid JSON:
 
 these are the available built-in value types.
 
+___
+
 ## <code>bool</code>
 
 ```json
