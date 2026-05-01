@@ -44,6 +44,7 @@ or, the minimal one is:
 ```
 
 ___
+___
 
 <h2>
 JSON variants enum
@@ -95,6 +96,7 @@ ___
 
 represents a nested JSON object.
 
+___
 ___
 
 <h2>
