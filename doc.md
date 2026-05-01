@@ -309,12 +309,12 @@ available for:
 
 > [!NOTE]
 > hex values must be lowercase.
-
-example:
-
-```json
-"#abcdef"
-```
+>
+> ### example
+>
+> ```json
+> "#abcdef"
+> ```
 
 ---
 
