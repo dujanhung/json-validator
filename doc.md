@@ -73,7 +73,7 @@ ___
 range_flag()
 ```
 
-specific range flags.
+specify range flags.
 
 only available for `float` and `int` .
 
@@ -85,5 +85,9 @@ only available for `float` and `int` .
 ___
 
 ```txt
-
+hex_flag()
 ```
+
+specify HEX flags.
+
+only available for `string` .
