@@ -232,7 +232,7 @@ enum()
 
 restricts the value with specified enum.
 
-only available for `string` .
+only available for `int` , `float` and `string` .
 
 example:
 
