@@ -191,7 +191,7 @@ this file is valid:
 
 ```json
 {
- "a":"a"
+ "a":"b"
 }
 ```
 
