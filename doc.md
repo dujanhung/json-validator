@@ -4,6 +4,7 @@ JSON entry syntax
 
 \`\`\`json
 "name|flag_name,...":"variant_name"
+
 \`\`\`
 
 <h2>
