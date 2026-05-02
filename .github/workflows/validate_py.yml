@@ -1,8 +1,8 @@
 name: validate Python
 on:
  workflow_dispatch:
- pull-request:
-  - "*.py"
+ pull_request:
+  - "**.py"
 env:
  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 jobs:
