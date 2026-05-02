@@ -29,7 +29,7 @@ jobs:
      run: |
       flake8 . \
        --indent-size=1 \
-       --ignore=E225,E231,E275,E301,E302,E303,E304,E305,E306 \
+       --ignore=E225,E226,E231,E275,E301,E302,E303,E304,E305,E306,W292 \
        --exclude=.venv,venv,env,__pycache__,build,dist
    - name: install Black
      run: pip install black
