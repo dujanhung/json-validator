@@ -158,7 +158,7 @@ represents a nested JSON object.
 
 ```json
 {
- "🐑":0
+ "🦖":"🪩"
 }
 ```
 
