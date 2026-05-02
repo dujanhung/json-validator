@@ -186,10 +186,10 @@ def main():
  data=validator.load_json(data_path)
  errors=validator.validate(lookup,data)
  if errors:
-  print("validation failed:")
+  print("🔴")
   for error in errors:
-   print(f"- {error}")
+   print(f"🪜 {error}")
   sys.exit(1)
- print("validation successful")
+ print("🟢")
 if __name__=="__main__":
  main()
