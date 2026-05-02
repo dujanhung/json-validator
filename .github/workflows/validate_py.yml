@@ -21,7 +21,7 @@ jobs:
        ! -path "./build/*" \
        ! -path "./dist/*" \
        -exec python -m py_compile {} +
-   - name: install tools
+   - name: install flake8 and black
      run: pip install flake8 black
    - name: lint
      run: |
