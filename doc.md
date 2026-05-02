@@ -179,15 +179,13 @@ flags add validation rules to a field.
 
 marks the field as required.
 
-example:
+### example
 
 ```json
 {
  "name|@required":"string"
 }
 ```
-
-the `name` field must exist.
 
 ---
 
