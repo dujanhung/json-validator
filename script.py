@@ -178,7 +178,7 @@ class Validator:
 def main():
  if len(sys.argv)!=3:
   print("✨ usage")
-  print("🪜 python *.py schema.json data.json")
+  print("🪜 python script.py schema.json data.json")
   sys.exit(1)
  lookup_path=sys.argv[1]
  data_path=sys.argv[2]
