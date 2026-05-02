@@ -1,0 +1,32 @@
+name: validate py
+on:
+ workflow_dispatch:
+env:
+ FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+jobs:
+ validate:
+  runs-on: ubuntu-latest
+  steps:
+   - uses: actions/checkout@v5
+   - uses: actions/setup-python@v5
+     with:
+      python-version: '3.14'
+   - run: pip install flake8 black
+   - name: syntax check
+     run: |
+      find . -type f -name "*.py" \
+       ! -path "./.venv/*" \
+       ! -path "./venv/*" \
+       ! -path "./env/*" \
+       ! -path "./__pycache__/*" \
+       ! -path "./build/*" \
+       ! -path "./dist/*" \
+       -exec python -m py_compile {} +
+   - name: lint
+     run: |
+      flake8 . \
+       --exclude=.venv,venv,env,__pycache__,build,dist
+   - name: format check
+     run: |
+      black --check . \
+       --exclude '/(\.venv|venv|env|__pycache__|build|dist)/'
