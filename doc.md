@@ -256,7 +256,7 @@ reason: duplicate value violates `@unique`.
 ## <code>array_flag()</code>
 
 ```txt
-array_flag(...)
+array_flag()
 ```
 
 applies restrictions to arrays.
@@ -280,7 +280,7 @@ behavior of `strict`:
 ## <code>range_flag()</code>
 
 ```txt
-range_flag(...)
+range_flag()
 ```
 
 applies numeric constraints.
@@ -301,7 +301,7 @@ available for:
 ## <code>hex_flag()</code>
 
 ```txt
-hex_flag(...)
+hex_flag()
 ```
 
 restricts a string to a hex color code.
@@ -367,7 +367,7 @@ valid:
 ## <code>enum()</code>
 
 ```txt
-enum(...)
+enum()
 ```
 
 restricts a value to a predefined list.
@@ -411,7 +411,7 @@ reason: value is not listed in `enum()`.
 ## <code>need()</code>
 
 ```txt
-need(condition)
+need()
 ```
 
 adds conditional validation based on other fields in the same object.
