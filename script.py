@@ -177,7 +177,8 @@ class Validator:
    return False
 def main():
  if len(sys.argv)!=3:
-  print("usage: python validator.py lookup.json data.json")
+  print("usage")
+  print("python validator.py lookup.json data.json")
   sys.exit(1)
  lookup_path=sys.argv[1]
  data_path=sys.argv[2]
