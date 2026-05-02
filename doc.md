@@ -125,7 +125,7 @@ represents a unicode string.
 example:
 
 ```json
-"hello"
+"🐑"
 ```
 
 ---
