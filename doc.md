@@ -74,7 +74,7 @@ ___
 
 represents a boolean value.
 
-example:
+### example
 
 ```json
 true
@@ -90,7 +90,7 @@ true
 
 represents an integer value.
 
-example:
+### example
 
 ```json
 123
@@ -106,7 +106,7 @@ example:
 
 represents a floating-point value.
 
-example:
+### example
 
 ```json
 3.14
@@ -122,7 +122,7 @@ example:
 
 represents a unicode string.
 
-example:
+### example
 
 ```json
 "🐑"
@@ -138,7 +138,7 @@ example:
 
 represents an array.
 
-example:
+### example
 
 ```json
 [1,2,3]
@@ -154,7 +154,7 @@ example:
 
 represents a nested JSON object.
 
-example:
+### example
 
 ```json
 {
