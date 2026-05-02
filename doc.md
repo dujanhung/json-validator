@@ -183,7 +183,7 @@ marks the field as required.
 
 ```json
 {
- "name|@required":"string"
+ "a|@required":"string"
 }
 ```
 
