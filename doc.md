@@ -292,9 +292,9 @@ available for:
 
 ### options
 
-- `exp` → exponential float
-- `linear` → linear float
-- `unsigned` → unsigned integer or float
+- `exp` → exponential float ( `x>0` ).
+- `linear` → linear float ( `0<=x<=1` ).
+- `unsigned` → unsigned int or float ( `x>=0` ).
 
 ---
 
